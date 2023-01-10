@@ -1,0 +1,44 @@
+#home_headphone_button{
+    width: 160px;
+    height: 48px;
+    color: $white-default;
+    background-color: $orange-default;
+    border: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+
+    &:hover{
+    background-color: $orange-on-hover;
+    }
+}
+
+.ZX9_speaker_button{
+    width: 160px;
+    height: 48px;
+    color: $white-default;
+    background-color: $dark-default;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $black-on-hover;
+        border: none;
+    }
+}
+
+.main_speaker_button{
+    width: 160px;
+    height: 48px;
+    background-color: $gray-default;
+    border: 1px solid $dark-default;
+    margin-top: 38px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $dark-default;
+        color: $white-default;
+    }
+}

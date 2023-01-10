@@ -1,0 +1,863 @@
+.chacker_wrapper{
+    display: flex;
+    .checker{
+        font-family: 'Manrope';
+        margin: 0 50px 50px 120px;
+        background-color: $white-default;
+
+        .checker_container{
+            width: 700px;
+            padding: 50px;
+
+            .check_header{
+                margin: 20px 0;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1.14286px;
+                text-transform: uppercase;
+                color: $dark-default;
+            }
+            .billing_header{
+                margin-top: 30px;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 25px;
+                letter-spacing: 0.928571px;
+                text-transform: uppercase;
+                color: $orange-default;
+
+            }
+            .billing_form{
+                display: flex;
+                justify-content: space-between;
+            }
+            .billing_form_hed{
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.214286px;
+                color: $dark-default;
+            }
+            .billing_form_inp{
+                border: 1px solid $gray-default;
+                border-radius: 8px;
+                width: 290px;
+                height: 50px;
+                padding-left: 25px;
+            }
+            .inp_long{
+                width: 100%;
+            }
+            .payment_method{
+                display: flex;
+                justify-content: space-between;
+
+                .payment_method_col{
+                    display: flex;
+                    flex-direction: column;
+
+                    .radio{
+                        margin-top: 10px;
+                        width: 290px;
+                        height: 50px;
+                        border: 1px solid $gray-default;
+                        border-radius: 8px;
+
+                        & label{
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: $dark-default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .summary{
+        width: 350px;
+        height: 650px;
+        font-family: 'Manrope';
+        background-color: $white-default;
+
+        .summary_header{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: $dark-default;
+            padding: 50px;
+        }
+        .summary_content{
+            padding: 0 50px;
+            .content_place{
+                width: 160px;
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+    
+                .summary_content_img{
+                    width: 64px;
+                    height: 64px;
+                }
+                .content_place_text{
+                    padding-left: 15px;
+        
+                    .summary_content_header{
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $dark-default;
+                    }
+                    .summary_content_text{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 25px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+            
+            }
+        
+            .total_wrapper{
+                margin: 30px 0;
+                display: flex;
+                justify-content: space-between;
+                .counter{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+                .cost{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: $dark-default;
+                }
+                .f_cost{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: $orange-default;
+                }
+                .summary_but{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+.checker_popup_wrapper{
+    font-family: 'Manrope';
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    .checker_popup{
+        font-family: 'Manrope';
+        width: 100%;
+        max-width: 420px;
+        height: 450px;
+        margin: 7% 10% 10% 60%;
+        padding: 20px;
+        background: $white-default;
+        position: relative;
+        .checker_popup_header{
+            padding-top: 5px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 1.14286px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        .checker_popup_p{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dark-default;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding: 10px 0;
+        }
+        .check_content_wrap{
+            display: flex;
+            padding-bottom: 30px;
+            .checker_content_place{
+                width: 180px;
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                padding-bottom:10px ;
+                border-radius: 8px;
+                background-color: $gray-default;
+                .checker_content_place_item{
+                    width: 160px;
+                    display: flex;
+                    border-bottom: 1px solid rgb(207, 205, 205);
+                    .summary_content_img{
+                        width: 64px;
+                        height: 64px;
+                    }
+                    .content_place_text{
+                        padding-left: 15px;
+            
+                        .summary_content_header{
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: $dark-default;
+                        }
+                        .summary_content_text{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: $dark-default;
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .more_items{
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding-top: 10px;
+                    padding-left: 40px;
+                    letter-spacing: -0.214286px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            }
+            .checker_content_place_right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 180px;
+                height: 140px;
+                background-color: $dark-default;
+                border-radius: 8px;
+                .checker_count{
+                    padding-top: 30px;
+                    color: $gray-default;
+                }
+            }
+        }
+    }
+    .checker_popup_closer{
+        padding-top: 10px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-decoration-line: underline;
+        color: $dark-default;
+    } 
+    .summary_but{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .chacker_wrapper{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        .checker{
+            font-family: 'Manrope';
+            margin: 20px 35px;
+            background-color: $white-default;
+    
+            .checker_container{
+                width: 700px;
+                padding: 50px;
+    
+                .check_header{
+                    margin: 20px 0;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    letter-spacing: 1.14286px;
+                    text-transform: uppercase;
+                    color: $dark-default;
+                }
+                .billing_header{
+                    margin-top: 30px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 25px;
+                    letter-spacing: 0.928571px;
+                    text-transform: uppercase;
+                    color: $orange-default;
+    
+                }
+                .billing_form{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .billing_form_hed{
+                    margin-top: 20px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.214286px;
+                    color: $dark-default;
+                }
+                .billing_form_inp{
+                    border: 1px solid $gray-default;
+                    border-radius: 8px;
+                    width: 290px;
+                    height: 50px;
+                    padding-left: 25px;
+                }
+                .inp_long{
+                    width: 100%;
+                }
+                .payment_method{
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .payment_method_col{
+                        display: flex;
+                        flex-direction: column;
+    
+                        .radio{
+                            margin-top: 10px;
+                            width: 290px;
+                            height: 50px;
+                            border: 1px solid $gray-default;
+                            border-radius: 8px;
+    
+                            & label{
+                                font-weight: 700;
+                                font-size: 14px;
+                                color: $dark-default;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .summary{
+            width: 91%;
+            height: 720px;
+            margin: 20px 35px;
+            font-family: 'Manrope';
+            background-color: $white-default;
+    
+            .summary_header{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 1.28571px;
+                text-transform: uppercase;
+                color: $dark-default;
+                padding: 50px;
+            }
+            .summary_content{
+                padding: 0 50px;
+                .content_place{
+                    width: 160px;
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+        
+                    .summary_content_img{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        border-radius: 8px;
+                    }
+                    .content_place_text{
+                        padding-left: 15px;
+            
+                        .summary_content_header{
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: $dark-default;
+                        }
+                        .summary_content_text{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: $dark-default;
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                        }
+                    }
+                
+                }
+            
+                .total_wrapper{
+                    margin: 30px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .counter{
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                    .cost{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: $dark-default;
+                    }
+                    .f_cost{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: $orange-default;
+                    }
+                    .summary_but{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+    .checker_popup_wrapper{
+        font-family: 'Manrope';
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        .checker_popup{
+            overflow-x: scroll;
+            font-family: 'Manrope';
+            width: 100%;
+            max-width: 420px;
+            height: 450px;
+            margin: 7% 10% 10% 50%;
+            padding: 20px;
+            background: $white-default;
+            position: relative;
+            .checker_popup_header{
+                padding-top: 5px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1.14286px;
+                text-transform: uppercase;
+                color: $dark-default;
+            }
+            .checker_popup_p{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                padding: 10px 0;
+            }
+            .check_content_wrap{
+                display: flex;
+                padding-bottom: 30px;
+                .checker_content_place{
+                    width: 180px;
+                    height: 140px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 30px;
+                    padding-bottom:10px ;
+                    border-radius: 8px;
+                    background-color: $gray-default;
+                    .checker_content_place_item{
+                        width: 160px;
+                        display: flex;
+                        border-bottom: 1px solid rgb(207, 205, 205);
+                        .summary_content_img{
+                            width: 64px;
+                            height: 64px;
+                        }
+                        .content_place_text{
+                            padding-left: 15px;
+                
+                            .summary_content_header{
+                                font-weight: 700;
+                                font-size: 15px;
+                                line-height: 25px;
+                                color: $dark-default;
+                            }
+                            .summary_content_text{
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 25px;
+                                color: $dark-default;
+                                mix-blend-mode: normal;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                    .more_items{
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding-top: 10px;
+                        padding-left: 40px;
+                        letter-spacing: -0.214286px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+                .checker_content_place_right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 180px;
+                    height: 140px;
+                    background-color: $dark-default;
+                    border-radius: 8px;
+                    .checker_count{
+                        padding-top: 30px;
+                        color: $gray-default;
+                    }
+                }
+            }
+        }
+        .checker_popup_closer{
+            padding-top: 10px;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-decoration-line: underline;
+            color: $dark-default;
+        } 
+        .summary_but{
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .chacker_wrapper{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        .checker{
+            font-family: 'Manrope';
+            margin: 20px 25px;
+            background-color: $white-default;
+    
+            .checker_container{
+                width: 700px;
+                padding: 50px;
+    
+                .check_header{
+                    margin: 20px 0;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    letter-spacing: 1.14286px;
+                    text-transform: uppercase;
+                    color: $dark-default;
+                }
+                .billing_header{
+                    margin-top: 30px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 25px;
+                    letter-spacing: 0.928571px;
+                    text-transform: uppercase;
+                    color: $orange-default;
+    
+                }
+                .billing_form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .billing_form_hed{
+                    margin-top: 20px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.214286px;
+                    color: $dark-default;
+                }
+                .billing_form_inp{
+                    border: 1px solid $gray-default;
+                    border-radius: 8px;
+                    width: 200px;
+                    height: 50px;
+                    padding-left: 25px;
+                }
+                .inp_long{
+                    width: 200px;
+                }
+                .payment_method{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .payment_method_col{
+                        display: flex;
+                        flex-direction: column;
+    
+                        .radio{
+                            margin-top: 10px;
+                            width: 290px;
+                            height: 50px;
+                            border: 1px solid $gray-default;
+                            border-radius: 8px;
+    
+                            & label{
+                                font-weight: 700;
+                                font-size: 14px;
+                                color: $dark-default;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .summary{
+            width: 87%;
+            height: 720px;
+            margin: 20px 25px;
+            font-family: 'Manrope';
+            background-color: $white-default;
+    
+            .summary_header{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 1.28571px;
+                text-transform: uppercase;
+                color: $dark-default;
+                padding: 50px;
+            }
+            .summary_content{
+                padding: 0 50px;
+                .content_place{
+                    width: 160px;
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+        
+                    .summary_content_img{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        border-radius: 8px;
+                    }
+                    .content_place_text{
+                        padding-left: 15px;
+            
+                        .summary_content_header{
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: $dark-default;
+                        }
+                        .summary_content_text{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: $dark-default;
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                        }
+                    }
+                
+                }
+            
+                .total_wrapper{
+                    margin: 30px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .counter{
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                    .cost{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: $dark-default;
+                    }
+                    .f_cost{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: $orange-default;
+                    }
+                    .summary_but{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+    .checker_popup_wrapper{
+        font-family: 'Manrope';
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        .checker_popup{
+            font-family: 'Manrope';
+            width: 100%;
+            max-width: 320px;
+            height: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: $white-default;
+            position: relative;
+            .checker_popup_header{
+                padding-top: 5px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1.14286px;
+                text-transform: uppercase;
+                color: $dark-default;
+            }
+            .checker_popup_p{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                padding: 10px 0;
+            }
+            .check_content_wrap{
+                display: flex;
+                padding-bottom: 30px;
+                .checker_content_place{
+                    width: 180px;
+                    height: 140px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 30px;
+                    padding-bottom:10px ;
+                    border-radius: 8px;
+                    background-color: $gray-default;
+                    .checker_content_place_item{
+                        width: 160px;
+                        display: flex;
+                        border-bottom: 1px solid rgb(207, 205, 205);
+                        .summary_content_img{
+                            width: 64px;
+                            height: 64px;
+                        }
+                        .content_place_text{
+                            padding-left: 15px;
+                
+                            .summary_content_header{
+                                font-weight: 700;
+                                font-size: 15px;
+                                line-height: 25px;
+                                color: $dark-default;
+                            }
+                            .summary_content_text{
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 25px;
+                                color: $dark-default;
+                                mix-blend-mode: normal;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                    .more_items{
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding-top: 10px;
+                        padding-left: 40px;
+                        letter-spacing: -0.214286px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+                .checker_content_place_right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 180px;
+                    height: 140px;
+                    background-color: $dark-default;
+                    border-radius: 8px;
+                    .checker_count{
+                        padding-top: 30px;
+                        color: $gray-default;
+                    }
+                }
+            }
+        }
+        .checker_popup_closer{
+            padding-top: 10px;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-decoration-line: underline;
+            color: $dark-default;
+        } 
+        .summary_but{
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+

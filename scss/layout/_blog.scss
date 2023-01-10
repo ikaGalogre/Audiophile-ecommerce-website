@@ -1,0 +1,131 @@
+.home_audio_gear{
+    font-family: 'Manrope';
+    height: 590px;
+    margin: 200px 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_text{
+        height: 295;
+        width: 445px;
+        margin-right: 125px;
+
+        & span{
+            color: $orange-default;
+        }
+
+        &_header{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        &_paragraph{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dark-default;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+    &_image img{
+        border-radius: 8px;
+        width: 440px;
+    }
+}
+@media (max-width: 992px) {
+    .home_audio_gear{
+        font-family: 'Manrope';
+        height: 645px;
+        margin: 50px 35px 150px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    
+        &_text{
+            order: 2;
+            height: 295;
+            width: 575px;
+            margin: 50px 0;
+    
+            & span{
+                color: $orange-default;
+            }
+    
+            &_header{
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 44px;
+                letter-spacing: 1.42857px;
+                text-transform: uppercase;
+                color: $dark-default;
+            }
+            &_paragraph{
+                padding-top: 10px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+        }
+        &_image img{
+            order: 1;
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home_audio_gear{
+        font-family: 'Manrope';
+        height: 700px;
+        margin: 140px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    
+        &_text{
+            order: 2;
+            height: 295;
+            width: 325px;
+            margin: 50px 0;
+    
+            & span{
+                color: $orange-default;
+            }
+    
+            &_header{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 1.42857px;
+                text-transform: uppercase;
+                color: $dark-default;
+            }
+            &_paragraph{
+                padding-top: 10px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+        }
+        &_image img{
+            order: 1;
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+}

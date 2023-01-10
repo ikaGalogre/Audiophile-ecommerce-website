@@ -1,0 +1,48 @@
+.burgerbar{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.burger-wrapper{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    .burger-popup{
+        font-family: 'Manrope';
+        width: 100%;
+        max-width: 100wh;
+        height: 450px;
+        margin: 5% 0;
+        padding: 2px;
+        background: $white-default;
+        position: relative;
+    }
+}
+
+@media (max-width:768px) {
+    .burger-wrapper{
+        background: rgba(0, 0, 0, 0);
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 99;
+        overflow-x: scroll;
+    
+        .burger-popup{
+            font-family: 'Manrope';
+            width: 100%;
+            height: 900px;
+            margin: 5% 0;
+            padding: 2px;
+            background: $white-default;
+            position: relative;
+        }
+    }
+}

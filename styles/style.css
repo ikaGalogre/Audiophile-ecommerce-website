@@ -1,120 +1,933 @@
-body{
- background: rgb(247, 242, 242);
- max-width: 1460px;
+.home_audio_gear {
+  font-family: "Manrope";
+  height: 590px;
+  margin: 200px 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-a{
-    text-decoration: none;
-    color: white;
+.home_audio_gear_text {
+  height: 295;
+  width: 445px;
+  margin-right: 125px;
 }
-/* styling home page */
-/* nav and header styles  */
-.header{
-    font-family: 'Manrope';
-    background-image: url(/images/desctop/background.jpg);
+.home_audio_gear_text span {
+  color: #D87D4A;
+}
+.home_audio_gear_text_header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.home_audio_gear_text_paragraph {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.home_audio_gear_image img {
+  border-radius: 8px;
+  width: 440px;
+}
+
+@media (max-width: 992px) {
+  .home_audio_gear {
+    font-family: "Manrope";
+    height: 645px;
+    margin: 50px 35px 150px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .home_audio_gear_text {
+    order: 2;
+    height: 295;
+    width: 575px;
+    margin: 50px 0;
+  }
+  .home_audio_gear_text span {
+    color: #D87D4A;
+  }
+  .home_audio_gear_text_header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .home_audio_gear_text_paragraph {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .home_audio_gear_image img {
+    order: 1;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .home_audio_gear {
+    font-family: "Manrope";
+    height: 700px;
+    margin: 140px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .home_audio_gear_text {
+    order: 2;
+    height: 295;
+    width: 325px;
+    margin: 50px 0;
+  }
+  .home_audio_gear_text span {
+    color: #D87D4A;
+  }
+  .home_audio_gear_text_header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .home_audio_gear_text_paragraph {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .home_audio_gear_image img {
+    order: 1;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+.burgerbar {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.burger-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.burger-wrapper .burger-popup {
+  font-family: "Manrope";
+  width: 100%;
+  max-width: 100wh;
+  height: 450px;
+  margin: 5% 0;
+  padding: 2px;
+  background: #FFFFFF;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .burger-wrapper {
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 99;
+    overflow-x: scroll;
+  }
+  .burger-wrapper .burger-popup {
+    font-family: "Manrope";
+    width: 100%;
+    height: 900px;
+    margin: 5% 0;
+    padding: 2px;
+    background: #FFFFFF;
+    position: relative;
+  }
+}
+.header {
+  font-family: "Manrope";
+  background-image: url(/assets/home/desktop/image-hero.jpg);
+  background-size: 100%;
+  height: 730px;
+  background-repeat: no-repeat;
+}
+.header_container {
+  margin: 0 165px;
+}
+.header .home_product_headphones_new {
+  margin-top: 128px;
+  color: #F1F1F1;
+  letter-spacing: 10px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.header .home_headphone_name {
+  color: #FFFFFF;
+  margin: 24px 0;
+  letter-spacing: 2px;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 58px;
+}
+.header .home_headphone_paragraph {
+  margin-bottom: 158px;
+  color: #F1F1F1;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 360px;
+  margin-bottom: 40px;
+  opacity: 0.75;
+}
+.header #home_headphone_button {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #D87D4A;
+  border: none;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header {
+    font-family: "Manrope";
+    background-image: url(/assets/home/tablet/image-header.jpg);
     background-size: 100%;
     height: 730px;
     background-repeat: no-repeat;
-}
-.header_container{
-    margin: 0 165px;
-}
-.nav{
-    height: 28px;
-    max-width: 1110px;
-    padding: 32px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    border-bottom: 1px solid #979797;
-}
-.nav_title{
-    font-size: 18px;
-    font-weight: bold;
-}
-.nav_list{
-    display: flex;
-}
-.nav_item_link{
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-.nav_item_link:hover{
-    color: #D87D4A;
-}
-.chart_btn{
-    cursor: pointer;
-    border: none;
-    background-color: #1b1b1b;
-}
-.home_product_headphones_new{
+  }
+  .header_container {
+    margin: 0 35px;
+    text-align: center;
+  }
+  .header_container .home_product_headphones {
+    padding-top: 70px;
+  }
+  .header_container .home_product_headphones .home_product_headphones_new {
     margin-top: 128px;
     color: #F1F1F1;
     letter-spacing: 10px;
     font-size: 14px;
     opacity: 0.5;
-}
-.home_headphone_name{
-     color: #FFFFFF;
-     margin: 24px 0;
+  }
+  .header_container .home_product_headphones .home_headphone_name {
+    color: #FFFFFF;
+    margin: 24px 0;
     letter-spacing: 2px;
     font-size: 56px;
     font-weight: bold;
     line-height: 58px;
-}
-.home_headphone_paragraph{
-    margin-bottom: 158px;
-     color: #F1F1F1;
+  }
+  .header_container .home_product_headphones .home_headphone_paragraph {
+    color: #F1F1F1;
     font-size: 16px;
+    font-weight: 500;
     line-height: 25px;
-    max-width: 349px;
-    margin-bottom: 40px;
+    max-width: 360px;
     opacity: 0.75;
-}
-#home_headphone_button{
+    margin: 25px auto;
+    padding-bottom: 40px;
+  }
+  .header_container .home_product_headphones #home_headphone_button {
     width: 160px;
     height: 48px;
-    color: white;
+    color: #FFFFFF;
     background-color: #D87D4A;
     border: none;
     letter-spacing: 0px;
     cursor: pointer;
+  }
 }
-/* section styles */
-.home_section{
-    font-family: 'Manrope';
+@media (max-width: 768px) {
+  .header {
+    font-family: "Manrope";
+    background-image: url(/assets/home/mobile/image-header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .header_container {
+    margin: 0px;
     text-align: center;
-    margin: 0 165px;
+  }
+  .header_container .home_product_headphones {
+    padding-top: 70px;
+  }
+  .header_container .home_product_headphones .home_product_headphones_new {
+    margin-top: 128px;
+    color: #F1F1F1;
+    letter-spacing: 10px;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  .header_container .home_product_headphones .home_headphone_name {
+    color: #FFFFFF;
+    margin: 24px 0;
+    letter-spacing: 2px;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  .header_container .home_product_headphones .home_headphone_paragraph {
+    color: #F1F1F1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    max-width: 330px;
+    opacity: 0.75;
+    margin: 25px auto;
+    padding-bottom: 20px;
+  }
+  .header_container .home_product_headphones #home_headphone_button {
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #D87D4A;
+    border: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+}
+.footer {
+  font-family: "Manrope";
+  background-color: #000000;
+  height: 365px;
+}
+.footer_header .footer_nav {
+  padding: 60px 0;
+  border-bottom: none;
+}
+.footer_header .footer_text {
+  padding: 0 165px;
+  color: #FFFFFF;
+}
+.footer_header .footer_text .footer_paragraph {
+  width: 540px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.footer_header .footer_text .icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+.footer_header .footer_text .icons .twitter {
+  margin: 0 15px;
+}
+.footer_header .footer_text .copyright {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 50px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .footer_header .footer_nav {
+    padding: 60px 0;
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer_header .footer_nav .footer_comp {
+    padding: 30px 0;
+  }
+  .footer_header .footer_text {
+    padding: 0 35px;
+    color: #FFFFFF;
+  }
+  .footer_header .footer_text .footer_paragraph {
+    width: 540px;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 30px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 650px;
+  }
+  .footer .footer_header {
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer .footer_header .footer_header_container {
+    margin: 0;
+  }
+  .footer .footer_header .footer_header_container .navigation {
+    margin: 0 auto;
+    height: 240px;
+    width: 110px;
+  }
+  .footer .footer_header .footer_header_container .navigation .footer_nav {
+    padding: 60px 0;
+    border-bottom: none;
+    align-items: center;
+  }
+  .footer .footer_header .footer_header_container .navigation .footer_nav .footer_comp {
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-left: 30px;
+  }
+  .footer .footer_header .footer_text {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer .footer_header .footer_text .footer_paragraph {
+    margin: 0 auto;
+    width: 330px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .footer .footer_header .footer_text .icons {
+    display: block;
+    padding-top: 20px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .footer .footer_header .footer_text .copyright {
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 25px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.popup-wrapper .popup {
+  font-family: "Manrope";
+  width: 100%;
+  max-width: 380px;
+  height: 450px;
+  margin: 7% 10% 10% 60%;
+  padding: 20px;
+  background: #FFFFFF;
+  position: relative;
+}
+.popup-wrapper .popup-closer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.popup-wrapper .popup_header {
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.popup-wrapper .popup_content {
+  margin: 20px 10px;
+}
+.popup-wrapper .popup .content_place {
+  width: 160px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.popup-wrapper .popup .content_place .summary_content_img {
+  width: 64px;
+  height: 64px;
+}
+.popup-wrapper .popup .content_place .content_place_text {
+  padding-left: 15px;
+}
+.popup-wrapper .popup .content_place .content_place_text .summary_content_header {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.popup-wrapper .popup .content_place .content_place_text .summary_content_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.popup-wrapper .popup .total_wrapper {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-wrapper .popup .total_wrapper .counter {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.popup-wrapper .popup .total_wrapper .cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+}
+.popup-wrapper .popup .total_wrapper .f_cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #D87D4A;
+}
+.popup-wrapper .popup .total_wrapper .summary_but {
+  text-align: center;
+}
+.popup-wrapper .popup .summary_but {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .popup-wrapper .popup {
+    font-family: "Manrope";
+    width: 100%;
+    max-width: 380px;
+    height: 450px;
+    margin: 7% 2% 10% 50%;
+    padding: 20px;
+    background: #FFFFFF;
+    position: relative;
+  }
+  .popup-wrapper .popup-closer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .popup-wrapper .popup_header {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .popup-wrapper .popup_content {
+    margin: 20px 10px;
+  }
+  .popup-wrapper .popup .summary_but {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 999;
+  }
+  .popup-wrapper .popup {
+    font-family: "Manrope";
+    width: 100%;
+    max-width: 380px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFFFFF;
+    position: relative;
+  }
+  .popup-wrapper .popup-closer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .popup-wrapper .popup_header {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .popup-wrapper .popup_content {
+    margin: 20px 10px;
+  }
+  .popup-wrapper .popup .summary_but {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.nav {
+  height: 28px;
+  max-width: 1110px;
+  padding: 32px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  border-bottom: 1px solid #F1F1F1;
+}
+.nav_title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.nav_list {
+  display: flex;
+}
+.nav_item_link {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-right: 35px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.nav_item_link:hover {
+  color: #D87D4A;
+}
+.nav .chart_btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.burgerbar {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .burgerbar {
+    display: flex;
+    padding-right: 30px;
+  }
+  .disapiarer {
+    display: none;
+  }
+}
+#home_headphone_button {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #D87D4A;
+  border: none;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+#home_headphone_button:hover {
+  background-color: #fbaf85;
+}
+
+.ZX9_speaker_button {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.ZX9_speaker_button:hover {
+  background-color: #4c4c4c;
+  border: none;
+}
+
+.main_speaker_button {
+  width: 160px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: 1px solid #000000;
+  margin-top: 38px;
+  cursor: pointer;
+}
+.main_speaker_button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.home_section {
+  font-family: "Manrope";
+  text-align: center;
+  margin: 0 165px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  max-width: 1110px;
+  height: 285px;
+}
+.home_section_container {
+  max-width: 1110px;
+}
+.home_section_items {
+  display: flex;
+  justify-content: space-between;
+}
+.home_section_items_content {
+  position: relative;
+}
+.home_section_items_image {
+  height: 200px;
+  position: absolute;
+  top: -70px;
+  right: 50px;
+  z-index: 99;
+}
+.home_section_items_text {
+  background-color: #F1F1F1;
+  position: relative;
+  height: 205px;
+  width: 320px;
+  border-radius: 8px;
+}
+.home_section_items_text .home_item_pic_title {
+  padding-top: 120px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  color: #000000;
+}
+.home_section_items_text .home_item_pic_link {
+  text-decoration: none;
+}
+.home_section_items_text .home_item_pic_link span {
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.home_main_container {
+  font-family: "Manrope";
+  max-width: 1110px;
+  margin: 0 165px;
+}
+.home_main_container .main_ZX9_speaker {
+  background-color: #D87D4A;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+.home_main_container .main_ZX9_speaker .main_speaker_image {
+  height: 490px;
+  margin-left: 115px;
+  margin-top: 100px;
+}
+.home_main_container .main_ZX9_speaker_content {
+  width: 349px;
+  height: 303px;
+  margin-left: 120px;
+}
+.home_main_container .main_ZX9_speaker_content h2 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.home_main_container .main_ZX9_speaker_content p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 40px;
+}
+.home_main_container .main_ZX7_speaker {
+  height: 320px;
+  margin: 48px 0;
+  background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
+  border-radius: 8px;
+}
+.home_main_container .main_ZX7_speaker_content {
+  width: 210px;
+  height: 118px;
+  padding: 100px 95px;
+}
+.home_main_container .main_ZX7_speaker_content h2 {
+  width: 300px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.home_main_container .main_YX1_earphones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 320px;
+}
+.home_main_container .main_YX1_earphones .main_speaker_image_earphones {
+  width: 540px;
+  border-radius: 8px;
+}
+.home_main_container .main_YX1_earphones .YX1_earphones_text {
+  background-color: #F1F1F1;
+  height: 320px;
+  width: 540px;
+  margin-left: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+.home_main_container .main_YX1_earphones .YX1_earphones_text h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-right: 50px;
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .home_section {
+    font-family: "Manrope";
+    text-align: center;
+    margin: 0 35px;
     margin-top: 200px;
     margin-bottom: 50px;
     max-width: 1110px;
     height: 285px;
-}
-.home_section_container{
+  }
+  .home_section_container {
     max-width: 1110px;
-
-}
-.home_section_items{
+  }
+  .home_section_items {
     display: flex;
     justify-content: space-between;
-}
-.home_item_pic_title{
-    padding-top: 120px;
+  }
+  .home_section_items_content {
+    position: relative;
+  }
+  .home_section_items_image {
+    height: 200px;
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    z-index: 99;
+  }
+  .home_section_items_text {
+    background-color: #F1F1F1;
+    position: relative;
+    height: 165px;
+    width: 220px;
+    border-radius: 8px;
+  }
+  .home_section_items_text .home_item_pic_title {
+    padding-top: 100px;
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1.28571px;
     color: #000000;
-}
-.home_item_pic_link{
+  }
+  .home_section_items_text .home_item_pic_link {
     text-decoration: none;
-    
-}
-.home_item_pic_link span{
+  }
+  .home_section_items_text .home_item_pic_link span {
     margin-right: 5px;
     font-weight: 700;
     font-size: 13px;
@@ -123,56 +936,39 @@ a{
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.home_section_items_content{
-    position: relative;
-}
-.home_section_items_image{
-    height:200px;
-    position: absolute;
-    top: -70px;
-    right: 50px;
-    z-index: 99;
-}
-.home_section_items_text{
-    background-color: #F1F1F1;
-    position: relative;
-    height: 205px;
-    width: 320px;
-    border-radius: 8px;
-}
-/* styiling main */
-.home_main_container{
-    font-family: 'Manrope';
+  }
+  .home_main_container {
+    font-family: "Manrope";
     max-width: 1110px;
-    margin: 0 165px;
-}
-.main_ZX9_speaker{
-    background-color:#D87D4A ;
-    height: 560px;
+    margin: 0 35px;
+  }
+  .home_main_container .main_ZX9_speaker {
+    background-color: #D87D4A;
+    height: 720px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     border-radius: 8px;
-}
-.main_speaker_image{
-    height: 490px;
-    margin-left: 115px;
-    margin-top: 100px;
-}
-.main_ZX9_speaker_content{
+  }
+  .home_main_container .main_ZX9_speaker .main_speaker_image {
+    height: 250px;
+    margin: 50px 0;
+  }
+  .home_main_container .main_ZX9_speaker_content {
     width: 349px;
     height: 303px;
-    margin-left: 120px;
-}
-.main_ZX9_speaker_content h2{
+    margin-left: 0;
+    text-align: center;
+  }
+  .home_main_container .main_ZX9_speaker_content h2 {
     font-weight: 700;
     font-size: 56px;
     line-height: 58px;
     letter-spacing: 2px;
     color: #FFFFFF;
     margin-bottom: 25px;
-}
-.main_ZX9_speaker_content p{
+  }
+  .home_main_container .main_ZX9_speaker_content p {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
@@ -180,64 +976,47 @@ a{
     mix-blend-mode: normal;
     opacity: 0.75;
     margin-bottom: 40px;
-}
-.ZX9_speaker_button{
-    cursor: pointer;
-    width: 160px;
-    height: 48px;
-    background-color: black;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-
-    letter-spacing: 1px;
-}
-.main_ZX7_speaker{
+  }
+  .home_main_container .main_ZX7_speaker {
     height: 320px;
     margin: 48px 0;
-    background-image: url(/images/desctop/ZX7_speaker_image.jpg);
+    background-image: url(/assets/home/tablet/image-speaker-zx7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 8px;
-}
-.main_ZX7_speaker_content{
+  }
+  .home_main_container .main_ZX7_speaker_content {
     width: 210px;
     height: 118px;
     padding: 100px 95px;
-}
-.main_ZX7_speaker_content h2{
+  }
+  .home_main_container .main_ZX7_speaker_content h2 {
     width: 300px;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 2px;
     color: #000000;
-}
-.main_speaker_button{
-    cursor: pointer;
-    margin-top: 38px;
-    width: 160px;
-    height: 48px;
-}
-
-.main_YX1_earphones{
+  }
+  .home_main_container .main_YX1_earphones {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:320px;
-}
-.YX1_earphones_text{
+    height: 320px;
+  }
+  .home_main_container .main_YX1_earphones .main_speaker_image_earphones {
+    width: 350px;
+    border-radius: 8px;
+  }
+  .home_main_container .main_YX1_earphones .YX1_earphones_text {
     background-color: #F1F1F1;
-    height:320px;
+    height: 320px;
     width: 540px;
     margin-left: 30px;
     text-align: center;
     border-radius: 8px;
-}
-.main_speaker_image_earphones{
-    width: 540px;
-    border-radius: 8px;
-}
-.main_YX1_earphones h2{
+  }
+  .home_main_container .main_YX1_earphones .YX1_earphones_text h2 {
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
@@ -246,196 +1025,282 @@ a{
     margin-top: 100px;
     margin-right: 50px;
     color: #000000;
+  }
 }
-
-.YX1_earphones_text .main_speaker_button{
-    cursor: pointer;
-    margin-right: 130px;
-}
-
-.home_audio_gear{
-    font-family: 'Manrope';
-    height: 590px;
-    margin: 200px 165px;
+@media (max-width: 768px) {
+  .home_section {
+    font-family: "Manrope";
+    text-align: center;
+    margin: 0 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 1110px;
+    height: 680px;
+  }
+  .home_section_container {
+    max-width: 1110px;
+  }
+  .home_section_items {
+    height: 680px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-/*  */
-.home_audio_gear_text{
-    height: 295;
-    width: 445px;
-    margin-right: 125px;
-}
-.home_audio_gear_text span{
-    color: #D87D4A ;
-}
-.home_audio_gear_text_header{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 44px;
-    letter-spacing: 1.42857px;
-    text-transform: uppercase;
-    color: #000000;
-}
-.home_audio_gear_text_paragraph{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-
-    color: #000000;
-
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-.home_audio_gear_image img{
-    border-radius: 8px;
-    width: 440px;
-}
-/* footer styling */
-.footer{
-    font-family: 'Manrope';
-    background-color: #000000;
-    height: 365px;
-}
-.footer_header{
-    margin: 0px 165px;
-    width: 1050px;
-}
-.footer_nav_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 75px;
-    padding-bottom: 35px;
-}
-.nav_list{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 25px;
-    list-style: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-}
-.footer_title{
-    color: #FFFFFF;
-    font-size: 28px;
-    font-weight: bold;
-}
-.footer_text{
-    color: #FFFFFF;
-}
-.footer_text_content:nth-child(1){
-    width: 540px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-.icons{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 35px;
-}
-.twitter{
-    margin: 0 15px;
-}
-.copyright{
-    font-weight: 700;
-    font-size: 15px;
-    padding-top: 50px;
-    line-height: 25px;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-
-/* popup styiling */
-.popup-wrapper{
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-.popup{
-    font-family: 'Manrope';
-    width: 100%;
-    max-width: 380px;
-    height: 450px;
-    margin: 7% 10% 10% 60%;
-    padding: 20px;
-    background: white;
+    gap: 80px;
+  }
+  .home_section_items_content {
     position: relative;
-}
-.popup-closer{
+  }
+  .home_section_items_image {
+    height: 200px;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration-line: underline;
-    color: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-} 
-.popup_header{
-    padding-top: 5px;
+    top: -70px;
+    right: 10px;
+    z-index: 99;
+  }
+  .home_section_items_text {
+    background-color: #F1F1F1;
+    position: relative;
+    height: 165px;
+    width: 220px;
+    border-radius: 8px;
+  }
+  .home_section_items_text .home_item_pic_title {
+    padding-top: 100px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1.28571px;
-    text-transform: uppercase;
     color: #000000;
-}
-.popup_content{
-    margin: 20px 10px;
-}
-/* styiling headphones page  */
-.headphones_header{
-    font-family: 'Manrope';
-    height: 336px;
-    background-color: #000000;
-}
-.headphones_main{
-    font-family: 'Manrope';
-    max-width: 1460px;
-    margin: 90px 165px;
+  }
+  .home_section_items_text .home_item_pic_link {
+    text-decoration: none;
+  }
+  .home_section_items_text .home_item_pic_link span {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .home_main_container {
+    font-family: "Manrope";
+    max-width: 1110px;
+    margin: 0 25px;
+  }
+  .home_main_container .main_ZX9_speaker {
+    background-color: #D87D4A;
+    height: 720px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.headphones_title{
-    color: #F1F1F1;
-    margin-top: 100px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 44px;
-    text-align: center;
-    letter-spacing: 1.42857px;
-    color: #FFFFFF;
-}
-.headphone_img{
+    flex-direction: column;
     border-radius: 8px;
-    width: 480px;
+  }
+  .home_main_container .main_ZX9_speaker .main_speaker_image {
+    height: 250px;
+    margin: 50px 0;
+  }
+  .home_main_container .main_ZX9_speaker_content {
+    width: 349px;
+    height: 303px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .home_main_container .main_ZX9_speaker_content h2 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  }
+  .home_main_container .main_ZX9_speaker_content p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 40px;
+  }
+  .home_main_container .main_ZX7_speaker {
+    height: 320px;
+    margin: 48px 0;
+    background-image: url(/assets/home/mobile/image-speaker-zx7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+  }
+  .home_main_container .main_ZX7_speaker_content {
+    width: 210px;
+    height: 118px;
+    padding: 100px 30px;
+  }
+  .home_main_container .main_ZX7_speaker_content h2 {
+    width: 300px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    color: #000000;
+  }
+  .home_main_container .main_YX1_earphones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 320px;
+    gap: 25px;
+  }
+  .home_main_container .main_YX1_earphones .main_speaker_image_earphones {
+    width: 350px;
+    border-radius: 8px;
+  }
+  .home_main_container .main_YX1_earphones .YX1_earphones_text {
+    background-color: #F1F1F1;
+    height: 330px;
+    width: 350px;
+    margin: 0 25px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .home_main_container .main_YX1_earphones .YX1_earphones_text h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-right: 50px;
+    color: #000000;
+  }
 }
-.headphone_main_header{
+.headphones_header {
+  font-family: "Manrope";
+  height: 336px;
+  background-color: #000000;
+}
+.headphones_header .headphones_title {
+  color: #F1F1F1;
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 1.42857px;
+  color: #FFFFFF;
+}
+.headphones_header .headphone_img {
+  border-radius: 8px;
+  width: 480px;
+}
+
+.headphones_main {
+  font-family: "Manrope";
+  max-width: 1460px;
+  margin: 90px 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headphones_main .headphone_img {
+  border-radius: 8px;
+  width: 480px;
+}
+.headphones_main .headphone_main_pic_text {
+  margin-left: 105px;
+  height: 295;
+  width: 445px;
+}
+.headphones_main .headphone_main_header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.headphones_main .headphone_main_paragraph {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 20px 0;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.headphones_main .headphone_main_pic_text_left {
+  margin-right: 105px;
+  height: 295;
+  width: 445px;
+}
+.headphones_main .headphones_dif_img p {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.headphones_main .headphone_main_new {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #D87D4A;
+}
+.headphones_main .headphone_mark_pic_text h3 {
+  margin-bottom: 32px;
+}
+.headphones_main .headphone_mark_pic_text button {
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.headphone_section {
+  margin-bottom: 0;
+  margin-top: 200px;
+}
+
+.headphone_blog {
+  margin: 0 165px;
+}
+
+@media (max-width: 992px) {
+  .headphones_main {
+    font-family: "Manrope";
+    max-width: 1460px;
+    margin: 90px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .headphones_main .headphone_img {
+    border-radius: 8px;
+    width: 100%;
+    order: 1;
+  }
+  .headphones_main .headphone_main_pic_text {
+    margin-left: 0;
+    padding-top: 50px;
+    height: 295;
+    width: 575px;
+    order: 2;
+  }
+  .headphones_main .headphone_main_header {
+    width: 365px;
     font-weight: 700;
     font-size: 40px;
     line-height: 44px;
     letter-spacing: 1.42857px;
     text-transform: uppercase;
     color: #000000;
-}
-.headphone_main_paragraph{
+    margin: 0 auto;
+  }
+  .headphones_main .headphone_main_paragraph {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
@@ -443,22 +1308,19 @@ a{
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.headphone_main_pic_text{
-    margin-left: 105px;
+  }
+  .headphones_main .headphone_main_pic_text_left {
+    margin-right: 0px;
+    padding-top: 50px;
     height: 295;
-    width: 445px;
-}
-.headphone_main_pic_text_left{
-    margin-right: 105px;
-    height: 295;
-    width: 445px;
-}
-.headphones_dif_img p{
+    width: 575px;
+    order: 2;
+  }
+  .headphones_main .headphones_dif_img p {
     margin-top: 32px;
     margin-bottom: 40px;
-}
-.headphone_main_new{
+  }
+  .headphones_main .headphone_main_new {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -466,184 +1328,385 @@ a{
     text-transform: uppercase;
     margin-bottom: 15px;
     color: #D87D4A;
-}
-.headphone_mark_pic_text h3{
+  }
+  .headphones_main .headphone_mark_pic_text h3 {
     margin-bottom: 32px;
-}
-.headphone_mark_pic_text button{
+  }
+  .headphones_main .headphone_mark_pic_text button {
     cursor: pointer;
     margin-top: 40px;
-}
-.headphone_section {
+  }
+  .headphone_section {
     margin-bottom: 0;
     margin-top: 200px;
+  }
+  .headphone_blog {
+    margin: 100px 35px;
+  }
 }
-.headphone_blog{
-    margin: 0 165px;
-}
-
-/* styiling products */
-.products_section{
-    margin: 0 165px;
-}
-.back{
-    padding-top: 60px;
-}
-.back a{
-    margin: 0 165px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    color: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-.price{
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 1.28571px;
-    text-transform: uppercase;
-    color: #000000;
-}
-.products_main{
-    margin-top: 50px;
-}
-.add_cart_button{
-    width: 160px;
-    height: 48px;
-    color: white;
-    background-color: #D87D4A;
-    border: none;
-    letter-spacing: 0px;
-    cursor: pointer;
-}
-.products_info{
-    font-family: 'Manrope';
-    margin-bottom: 20px;
-}
-.product_header{
-    background-color: #000000;
-}
-.product_info_text{
-    height: 318px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-}
-.product_text_header{
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: 1.14286px;
-    color: #000000;
-}
-.product_text_paragraph{
-    margin-bottom: 20px;
-}
-.product_info_text_one{
-    width: 635px;
-    height: 318px;
-}
-.product_info_text_one p{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    color: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-.product_info_text_two{
-    width: 350px;
-    height: 225px;
-}
-.product_text_ul{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    color: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-.product_text_ul span{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 30px;
-    color: #D87D4A;
-    margin-right: 15px;
-}
-
-.products_info_image{
-    display: flex;
-    justify-content: space-between;
-}
-.info_image_first{
-    width: 445px;
-    margin-top: 30px;
-    height: 280px;
-    border-radius: 8px;
-}
-.info_image_sec{
-    margin-top: 30px;
-    width: 540px;
-    height: 590px;
-    border-radius: 8px;
-}
-.product_adds_section{
-    font-family: 'Manrope';
-    margin: 0 165px;
-}
-.adds_section_content_container{
-    display: flex;
-    justify-content: space-between;
-}
-.product_adds_section_content{
+@media (max-width: 768px) {
+  .headphones_main {
+    font-family: "Manrope";
+    max-width: 1460px;
+    margin: 90px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.product_adds_section_header{
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .headphones_main .headphone_img {
+    border-radius: 8px;
+    width: 100%;
+    order: 1;
+  }
+  .headphones_main .headphone_main_pic_text {
+    margin-left: 0;
+    padding-top: 50px;
+    height: 295;
+    width: 325px;
+    order: 2;
+  }
+  .headphones_main .headphone_main_header {
+    width: 100%;
+    text-align: center;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: 1.14286px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
     text-transform: uppercase;
     color: #000000;
-}
-.adds_section_content_img{
-    width: 330px;
-    height: 318px;
-    margin-bottom: 30px;
-}
-.adds_section_content_header{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 1.71429px;
-    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  .headphones_main .headphone_main_paragraph {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 20px 0;
     color: #000000;
-    margin-bottom: 20px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .headphones_main .headphone_main_pic_text_left {
+    margin-right: 0px;
+    padding-top: 50px;
+    height: 295;
+    width: 325px;
+    order: 2;
+  }
+  .headphones_main .headphones_dif_img p {
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  .headphones_main .headphone_main_new {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #D87D4A;
+  }
+  .headphones_main .headphone_mark_pic_text h3 {
+    margin-bottom: 32px;
+  }
+  .headphones_main .headphone_mark_pic_text button {
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  .headphone_section {
+    margin-bottom: 0;
+    margin-top: 200px;
+  }
+  .headphone_blog {
+    margin: 0 25px;
+  }
 }
-/* checkout styiling */
-.checker{
-    font-family: 'Manrope';
-    margin: 0 50px 50px 120px;
-    background-color: #FFFFFF;
+.chacker_wrapper {
+  display: flex;
 }
-.chacker_wrapper{
+.chacker_wrapper .checker {
+  font-family: "Manrope";
+  margin: 0 50px 50px 120px;
+  background-color: #FFFFFF;
+}
+.chacker_wrapper .checker .checker_container {
+  width: 700px;
+  padding: 50px;
+}
+.chacker_wrapper .checker .checker_container .check_header {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14286px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.chacker_wrapper .checker .checker_container .billing_header {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #D87D4A;
+}
+.chacker_wrapper .checker .checker_container .billing_form {
+  display: flex;
+  justify-content: space-between;
+}
+.chacker_wrapper .checker .checker_container .billing_form_hed {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+.chacker_wrapper .checker .checker_container .billing_form_inp {
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+  width: 290px;
+  height: 50px;
+  padding-left: 25px;
+}
+.chacker_wrapper .checker .checker_container .inp_long {
+  width: 100%;
+}
+.chacker_wrapper .checker .checker_container .payment_method {
+  display: flex;
+  justify-content: space-between;
+}
+.chacker_wrapper .checker .checker_container .payment_method .payment_method_col {
+  display: flex;
+  flex-direction: column;
+}
+.chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio {
+  margin-top: 10px;
+  width: 290px;
+  height: 50px;
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+}
+.chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+}
+.chacker_wrapper .summary {
+  width: 350px;
+  height: 650px;
+  font-family: "Manrope";
+  background-color: #FFFFFF;
+}
+.chacker_wrapper .summary .summary_header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 50px;
+}
+.chacker_wrapper .summary .summary_content {
+  padding: 0 50px;
+}
+.chacker_wrapper .summary .summary_content .content_place {
+  width: 160px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.chacker_wrapper .summary .summary_content .content_place .summary_content_img {
+  width: 64px;
+  height: 64px;
+}
+.chacker_wrapper .summary .summary_content .content_place .content_place_text {
+  padding-left: 15px;
+}
+.chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_header {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.chacker_wrapper .summary .summary_content .total_wrapper {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.chacker_wrapper .summary .summary_content .total_wrapper .counter {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.chacker_wrapper .summary .summary_content .total_wrapper .cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+}
+.chacker_wrapper .summary .summary_content .total_wrapper .f_cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #D87D4A;
+}
+.chacker_wrapper .summary .summary_content .total_wrapper .summary_but {
+  text-align: center;
+}
+
+.checker_popup_wrapper {
+  font-family: "Manrope";
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.checker_popup_wrapper .checker_popup {
+  font-family: "Manrope";
+  width: 100%;
+  max-width: 420px;
+  height: 450px;
+  margin: 7% 10% 10% 60%;
+  padding: 20px;
+  background: #FFFFFF;
+  position: relative;
+}
+.checker_popup_wrapper .checker_popup .checker_popup_header {
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14286px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.checker_popup_wrapper .checker_popup .checker_popup_p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 10px 0;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap {
+  display: flex;
+  padding-bottom: 30px;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place {
+  width: 180px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  background-color: #F1F1F1;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item {
+  width: 160px;
+  display: flex;
+  border-bottom: 1px solid rgb(207, 205, 205);
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .summary_content_img {
+  width: 64px;
+  height: 64px;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text {
+  padding-left: 15px;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_header {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .more_items {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 10px;
+  padding-left: 40px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: 140px;
+  background-color: #000000;
+  border-radius: 8px;
+}
+.checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right .checker_count {
+  padding-top: 30px;
+  color: #F1F1F1;
+}
+.checker_popup_wrapper .checker_popup_closer {
+  padding-top: 10px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.checker_popup_wrapper .summary_but {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .chacker_wrapper {
     display: flex;
-}
-.checker_container{
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+  .chacker_wrapper .checker {
+    font-family: "Manrope";
+    margin: 20px 35px;
+    background-color: #FFFFFF;
+  }
+  .chacker_wrapper .checker .checker_container {
     width: 700px;
     padding: 50px;
-}
-.check_header{
+  }
+  .chacker_wrapper .checker .checker_container .check_header {
     margin: 20px 0;
     font-weight: 700;
     font-size: 32px;
@@ -651,10 +1714,140 @@ a{
     letter-spacing: 1.14286px;
     text-transform: uppercase;
     color: #000000;
-}
-/*  */
-.checker_popup_wrapper{
-    font-family: 'Manrope';
+  }
+  .chacker_wrapper .checker .checker_container .billing_header {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.928571px;
+    text-transform: uppercase;
+    color: #D87D4A;
+  }
+  .chacker_wrapper .checker .checker_container .billing_form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .chacker_wrapper .checker .checker_container .billing_form_hed {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.214286px;
+    color: #000000;
+  }
+  .chacker_wrapper .checker .checker_container .billing_form_inp {
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    width: 290px;
+    height: 50px;
+    padding-left: 25px;
+  }
+  .chacker_wrapper .checker .checker_container .inp_long {
+    width: 100%;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method {
+    display: flex;
+    justify-content: space-between;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col {
+    display: flex;
+    flex-direction: column;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio {
+    margin-top: 10px;
+    width: 290px;
+    height: 50px;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio label {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  .chacker_wrapper .summary {
+    width: 91%;
+    height: 720px;
+    margin: 20px 35px;
+    font-family: "Manrope";
+    background-color: #FFFFFF;
+  }
+  .chacker_wrapper .summary .summary_header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 50px;
+  }
+  .chacker_wrapper .summary .summary_content {
+    padding: 0 50px;
+  }
+  .chacker_wrapper .summary .summary_content .content_place {
+    width: 160px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .chacker_wrapper .summary .summary_content .content_place .summary_content_img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 8px;
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text {
+    padding-left: 15px;
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_header {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .counter {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .cost {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .f_cost {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #D87D4A;
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .summary_but {
+    text-align: center;
+  }
+  .checker_popup_wrapper {
+    font-family: "Manrope";
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -662,29 +1855,19 @@ a{
     width: 100%;
     height: 100%;
     display: none;
-}
-.checker_popup{
-    font-family: 'Manrope';
+  }
+  .checker_popup_wrapper .checker_popup {
+    overflow-x: scroll;
+    font-family: "Manrope";
     width: 100%;
     max-width: 420px;
     height: 450px;
-    margin: 7% 10% 10% 60%;
+    margin: 7% 10% 10% 50%;
     padding: 20px;
-    background: white;
+    background: #FFFFFF;
     position: relative;
-}
-.checker_popup_closer{
-    padding-top: 10px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration-line: underline;
-    color: #000000;
-} 
-.checker_popup_header{
+  }
+  .checker_popup_wrapper .checker_popup .checker_popup_header {
     padding-top: 5px;
     font-weight: 700;
     font-size: 32px;
@@ -692,8 +1875,8 @@ a{
     letter-spacing: 1.14286px;
     text-transform: uppercase;
     color: #000000;
-}
-.checker_popup_p{
+  }
+  .checker_popup_wrapper .checker_popup .checker_popup_p {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
@@ -701,28 +1884,49 @@ a{
     mix-blend-mode: normal;
     opacity: 0.5;
     padding: 10px 0;
-}
-.check_content_wrap{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap {
     display: flex;
     padding-bottom: 30px;
-}
-.checker_content_place{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place {
     width: 180px;
     height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    padding-bottom:10px ;
+    padding-bottom: 10px;
     border-radius: 8px;
     background-color: #F1F1F1;
-}
-.checker_content_place_item{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item {
     width: 160px;
     display: flex;
     border-bottom: 1px solid rgb(207, 205, 205);
-}
-.more_items{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .summary_content_img {
+    width: 64px;
+    height: 64px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text {
+    padding-left: 15px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_header {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .more_items {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -732,8 +1936,8 @@ a{
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.checker_content_place_right{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -741,16 +1945,52 @@ a{
     height: 140px;
     background-color: #000000;
     border-radius: 8px;
-}
-.popup_content{
-    margin: 20px 10px;
-}
-.checker_content_place_right .checker_count{
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right .checker_count {
     padding-top: 30px;
     color: #F1F1F1;
+  }
+  .checker_popup_wrapper .checker_popup_closer {
+    padding-top: 10px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+  .checker_popup_wrapper .summary_but {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
-/*  */
-.billing_header{
+@media (max-width: 768px) {
+  .chacker_wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+  .chacker_wrapper .checker {
+    font-family: "Manrope";
+    margin: 20px 25px;
+    background-color: #FFFFFF;
+  }
+  .chacker_wrapper .checker .checker_container {
+    width: 700px;
+    padding: 50px;
+  }
+  .chacker_wrapper .checker .checker_container .check_header {
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .chacker_wrapper .checker .checker_container .billing_header {
     margin-top: 30px;
     font-weight: 700;
     font-size: 13px;
@@ -758,58 +1998,59 @@ a{
     letter-spacing: 0.928571px;
     text-transform: uppercase;
     color: #D87D4A;
-}
-.billing_form{
+  }
+  .chacker_wrapper .checker .checker_container .billing_form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-.billing_form_hed{
+  }
+  .chacker_wrapper .checker .checker_container .billing_form_hed {
     margin-top: 20px;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: -0.214286px;
     color: #000000;
-}
-.billing_form_inp{
-    border: 1px solid #CFCFCF;
+  }
+  .chacker_wrapper .checker .checker_container .billing_form_inp {
+    border: 1px solid #F1F1F1;
     border-radius: 8px;
-    width: 290px;
+    width: 200px;
     height: 50px;
-}
-.billing_form_inp{
     padding-left: 25px;
-}
-.inp_long{
-    width: 100%;
-}
-.payment_method{
-    display: flex;
-    justify-content: space-between;
-}
-.payment_method_col{
+  }
+  .chacker_wrapper .checker .checker_container .inp_long {
+    width: 200px;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method {
     display: flex;
     flex-direction: column;
-}
-.radio{
+    justify-content: space-between;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col {
+    display: flex;
+    flex-direction: column;
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio {
     margin-top: 10px;
     width: 290px;
     height: 50px;
-    border: 1px solid #CFCFCF;
+    border: 1px solid #F1F1F1;
     border-radius: 8px;
-}
-.radio label{
+  }
+  .chacker_wrapper .checker .checker_container .payment_method .payment_method_col .radio label {
     font-weight: 700;
     font-size: 14px;
     color: #000000;
-}
-.summary{
-    width: 350px;
-    height: 600px;
-    font-family: 'Manrope';
-    background-color: #ffffff;
-}
-.summary_header{
+  }
+  .chacker_wrapper .summary {
+    width: 87%;
+    height: 720px;
+    margin: 20px 25px;
+    font-family: "Manrope";
+    background-color: #FFFFFF;
+  }
+  .chacker_wrapper .summary .summary_header {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -817,67 +2058,680 @@ a{
     text-transform: uppercase;
     color: #000000;
     padding: 50px;
-    
-}
-.summary_content{
+  }
+  .chacker_wrapper .summary .summary_content {
     padding: 0 50px;
-}
-.content_place{
+  }
+  .chacker_wrapper .summary .summary_content .content_place {
     width: 160px;
     margin: 10px 0;
     display: flex;
     align-items: center;
-}
-.summary_content_img{
-    width: 64px;
-    height: 64px;
-}
-.content_place_text{
+  }
+  .chacker_wrapper .summary .summary_content .content_place .summary_content_img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 8px;
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text {
     padding-left: 15px;
-}
-.summary_content_header{
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_header {
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     color: #000000;
-}
-.summary_content_text{
+  }
+  .chacker_wrapper .summary .summary_content .content_place .content_place_text .summary_content_text {
     font-weight: 700;
     font-size: 14px;
     line-height: 25px;
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.total_wrapper{
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper {
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
-}
-.counter{
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .counter {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.cost{
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .cost {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     text-align: right;
     text-transform: uppercase;
     color: #000000;
-}
-.f_cost{
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .f_cost {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     text-align: right;
     text-transform: uppercase;
     color: #D87D4A;
-}
-.summary_but{
+  }
+  .chacker_wrapper .summary .summary_content .total_wrapper .summary_but {
     text-align: center;
+  }
+  .checker_popup_wrapper {
+    font-family: "Manrope";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .checker_popup_wrapper .checker_popup {
+    font-family: "Manrope";
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFFFFF;
+    position: relative;
+  }
+  .checker_popup_wrapper .checker_popup .checker_popup_header {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .checker_popup_wrapper .checker_popup .checker_popup_p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding: 10px 0;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place {
+    width: 180px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #F1F1F1;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item {
+    width: 160px;
+    display: flex;
+    border-bottom: 1px solid rgb(207, 205, 205);
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .summary_content_img {
+    width: 64px;
+    height: 64px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text {
+    padding-left: 15px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_header {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .checker_content_place_item .content_place_text .summary_content_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place .more_items {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-left: 40px;
+    letter-spacing: -0.214286px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 140px;
+    background-color: #000000;
+    border-radius: 8px;
+  }
+  .checker_popup_wrapper .checker_popup .check_content_wrap .checker_content_place_right .checker_count {
+    padding-top: 30px;
+    color: #F1F1F1;
+  }
+  .checker_popup_wrapper .checker_popup_closer {
+    padding-top: 10px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+  .checker_popup_wrapper .summary_but {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
+.product_header {
+  background-color: #000000;
+}
+
+.back {
+  padding-top: 60px;
+}
+.back a {
+  margin: 0 165px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.products_main {
+  margin-top: 50px;
+}
+.products_main .price {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.products_main .add_cart_button {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #D87D4A;
+  border: none;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.products_section {
+  margin: 0 165px;
+}
+.products_section .products_info {
+  font-family: "Manrope";
+  margin-bottom: 20px;
+}
+.products_section .products_info .product_info_text {
+  height: 318px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.products_section .products_info .product_info_text .product_info_text_one {
+  width: 635px;
+  height: 318px;
+}
+.products_section .products_info .product_info_text .product_info_text_one p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.products_section .products_info .product_info_text .product_info_text_two {
+  width: 350px;
+  height: 225px;
+}
+.products_section .products_info .product_info_text .product_text_header {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14286px;
+  color: #000000;
+}
+.products_section .products_info .product_info_text .product_text_paragraph {
+  margin-bottom: 20px;
+}
+.products_section .products_info .product_info_text .product_text_ul {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.products_section .products_info .product_info_text .product_text_ul span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  color: #D87D4A;
+  margin-right: 15px;
+}
+
+.products_info_image {
+  display: flex;
+  justify-content: space-between;
+}
+.products_info_image .info_image_first {
+  width: 445px;
+  margin-top: 30px;
+  height: 280px;
+  border-radius: 8px;
+}
+.products_info_image .info_image_sec {
+  margin-top: 30px;
+  width: 540px;
+  height: 590px;
+  border-radius: 8px;
+}
+
+.product_adds_section {
+  font-family: "Manrope";
+  margin: 0 165px;
+}
+.product_adds_section .product_adds_section_header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14286px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.product_adds_section .adds_section_content_container {
+  display: flex;
+  justify-content: space-between;
+}
+.product_adds_section .adds_section_content_container .product_adds_section_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_img {
+  width: 330px;
+  height: 318px;
+  margin-bottom: 30px;
+}
+.product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .back {
+    padding-top: 60px;
+  }
+  .back a {
+    margin: 0 35px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 30px;
+  }
+  .products_main .headphone_main_header {
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 auto;
+  }
+  .products_main .price {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .products_main .add_cart_button {
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #D87D4A;
+    border: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+  .products_section {
+    margin: 0 35px;
+  }
+  .products_section .products_info {
+    font-family: "Manrope";
+    margin-bottom: 20px;
+  }
+  .products_section .products_info .product_info_text {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .products_section .products_info .product_info_text .product_info_text_one {
+    width: 685px;
+    height: 318px;
+  }
+  .products_section .products_info .product_info_text .product_info_text_one p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_section .products_info .product_info_text .product_info_text_two {
+    display: flex;
+    gap: 150px;
+    width: 550px;
+    height: 160px;
+  }
+  .products_section .products_info .product_info_text .product_text_header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    color: #000000;
+  }
+  .products_section .products_info .product_info_text .product_text_paragraph {
+    margin-bottom: 20px;
+  }
+  .products_section .products_info .product_info_text .product_text_ul {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_section .products_info .product_info_text .product_text_ul span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #D87D4A;
+    margin-right: 15px;
+  }
+  .products_info_image {
+    display: flex;
+    justify-content: space-between;
+  }
+  .products_info_image .info_image_first {
+    height: 190px;
+    width: 380px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+  .products_info_image .info_image_sec {
+    margin-top: 30px;
+    width: 500px;
+    height: 410px;
+    border-radius: 8px;
+  }
+  .product_adds_section {
+    font-family: "Manrope";
+    margin: 0 35px;
+  }
+  .product_adds_section .product_adds_section_header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .product_adds_section .adds_section_content_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_img {
+    width: 260px;
+    height: 320px;
+    margin-bottom: 30px;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .back {
+    padding-top: 60px;
+  }
+  .back a {
+    margin: 0 25px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .products_main .headphone_main_header {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 auto;
+  }
+  .products_main .price {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .products_main .add_cart_button {
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #D87D4A;
+    border: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+  .products_section {
+    margin: 0 25px;
+  }
+  .products_section .products_info {
+    font-family: "Manrope";
+    margin-bottom: 20px;
+  }
+  .products_section .products_info .product_info_text {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .products_section .products_info .product_info_text .product_info_text_one {
+    width: 330px;
+    height: 650px;
+  }
+  .products_section .products_info .product_info_text .product_info_text_one p {
+    height: 200px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_section .products_info .product_info_text .product_info_text_two {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 330px;
+    height: 160px;
+    margin: 80px 0;
+    margin-bottom: 100px;
+  }
+  .products_section .products_info .product_info_text .product_text_header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    color: #000000;
+  }
+  .products_section .products_info .product_info_text .product_text_paragraph {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .products_section .products_info .product_info_text .product_text_ul {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .products_section .products_info .product_info_text .product_text_ul span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #D87D4A;
+    margin-right: 15px;
+  }
+  .products_info_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  .products_info_image .info_image_first {
+    height: 190px;
+    width: 330px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+  .products_info_image .info_image_sec {
+    margin-top: 30px;
+    width: 330px;
+    height: 410px;
+    border-radius: 8px;
+  }
+  .product_adds_section {
+    font-family: "Manrope";
+    margin: 0 25px;
+  }
+  .product_adds_section .product_adds_section_header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .product_adds_section .adds_section_content_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .product_adds_section .adds_section_content_container .product_adds_section_content .adds_section_content_header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+}
+body {
+  background: rgb(247, 242, 242);
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

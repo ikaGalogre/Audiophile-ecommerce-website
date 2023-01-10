@@ -1,0 +1,149 @@
+.footer{
+    font-family: 'Manrope';
+    background-color: $dark-default;
+    height: 365px;
+
+    &_header{
+        .footer_nav{
+            padding: 60px 0;
+
+           border-bottom: none;
+        }
+        .footer_text{
+            padding: 0 165px;
+            color: $white-default;
+
+                .footer_paragraph{
+                    width: 540px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $white-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            .icons{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 35px;
+
+                .twitter{
+                    margin: 0 15px;
+                }
+                
+            }
+            .copyright{
+                font-weight: 700;
+                font-size: 15px;
+                padding-top: 50px;
+                line-height: 25px;
+                color: $white-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer_header{
+        .footer_nav{
+            padding: 60px 0;
+            border-bottom: none;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .footer_comp{
+                padding: 30px 0;
+            }
+        }
+        .footer_text{
+            padding: 0 35px;
+            color: $white-default;
+
+                .footer_paragraph{
+                    width: 540px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    padding-top: 30px;
+                    line-height: 25px;
+                    color: $white-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+          
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer{
+        height: 650px;
+        .footer_header{
+            width: 375px;
+            margin: 0 auto;
+            text-align: center;
+            .footer_header_container{
+                margin: 0;
+                .navigation{
+                    margin: 0 auto;
+                    height: 240px;
+                    width: 110px;
+                    .footer_nav{
+                        padding: 60px 0;
+                        border-bottom: none;
+                        align-items: center;
+            
+                        .footer_comp{
+                            height: 150px;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 15px;
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+            .footer_text{
+                color: $white-default;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0;
+                // .footer_text_content{
+                //     padding: 100px 0;
+                    .footer_paragraph{
+                        margin: 0 auto;
+                        width: 330px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        // padding-top: 150px;
+                        line-height: 25px;
+                        color: $white-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        text-align: center;
+                    }
+                // }
+                    
+                    .icons{
+                        display: block;
+                        padding-top: 20px;
+                        margin-right: 0;
+                        align-items: center;
+                        
+                    }
+                    .copyright{
+                        font-weight: 700;
+                        font-size: 15px;
+                        padding-top: 25px;
+                        line-height: 25px;
+                        color: $white-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+            }
+        }
+    }
+}

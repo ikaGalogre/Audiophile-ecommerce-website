@@ -1,0 +1,490 @@
+.home_section{
+    font-family: 'Manrope';
+    text-align: center;
+    margin: 0 165px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    max-width: 1110px;
+    height: 285px;
+
+    &_container{
+        max-width: 1110px;
+    }
+    &_items{
+        display: flex;
+        justify-content: space-between;
+
+        &_content{
+            position: relative;
+        }
+
+        &_image{
+            height:200px;
+            position: absolute;
+            top: -70px;
+            right: 50px;
+            z-index: 99;
+        }
+        &_text{
+            background-color: $gray-default;
+            position: relative;
+            height: 205px;
+            width: 320px;
+            border-radius: 8px;
+
+            .home_item_pic_title{
+                padding-top: 120px;
+                padding-bottom: 10px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 1.28571px;
+                color: $dark-default;
+            }
+            .home_item_pic_link{
+                text-decoration: none;
+                
+                & span{
+                    margin-right: 5px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.home_main_container{
+    font-family: 'Manrope';
+    max-width: 1110px;
+    margin: 0 165px;
+
+    .main_ZX9_speaker{
+        background-color:$orange-default ;
+        height: 560px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+
+        .main_speaker_image{
+            height: 490px;
+            margin-left: 115px;
+            margin-top: 100px;
+        }
+        &_content{
+            width: 349px;
+            height: 303px;
+            margin-left: 120px;
+
+            & h2{
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 58px;
+                letter-spacing: 2px;
+                color: $white-default;
+                margin-bottom: 25px;
+            }
+            & p{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $white-default;
+                mix-blend-mode: normal;
+                opacity: 0.75;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .main_ZX7_speaker{
+        height: 320px;
+        margin: 48px 0;
+        background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
+        border-radius: 8px;
+
+        &_content{
+            width: 210px;
+            height: 118px;
+            padding: 100px 95px;
+
+            & h2{
+                width: 300px;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 38px;
+                letter-spacing: 2px;
+                color: $dark-default;
+            }
+            
+        }
+    }
+
+    .main_YX1_earphones{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height:320px;
+
+        .main_speaker_image_earphones{
+            width: 540px;
+            border-radius: 8px;
+        }
+
+        .YX1_earphones_text{
+            background-color: $gray-default;
+            height:320px;
+            width: 540px;
+            margin-left: 30px;
+            text-align: center;
+            border-radius: 8px;
+
+            & h2{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 38px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-top: 100px;
+                margin-right: 50px;
+                color: $dark-default;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .home_section{
+        font-family: 'Manrope';
+        text-align: center;
+        margin: 0 35px;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        max-width: 1110px;
+        height: 285px;
+    
+        &_container{
+            max-width: 1110px;
+        }
+        &_items{
+            display: flex;
+            justify-content: space-between;
+    
+            &_content{
+                position: relative;
+            }
+    
+            &_image{
+                height:200px;
+                position: absolute;
+                top: -70px;
+                right: 10px;
+                z-index: 99;
+            }
+            &_text{
+                background-color: $gray-default;
+                position: relative;
+                height: 165px;
+                width: 220px;
+                border-radius: 8px;
+    
+                .home_item_pic_title{
+                    padding-top: 100px;
+                    padding-bottom: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 1.28571px;
+                    color: $dark-default;
+                }
+                .home_item_pic_link{
+                    text-decoration: none;
+                    
+                    & span{
+                        margin-right: 5px;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 18px;
+                        letter-spacing: 1px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    .home_main_container{
+        font-family: 'Manrope';
+        max-width: 1110px;
+        margin: 0 35px;
+    
+        .main_ZX9_speaker{
+            background-color:$orange-default ;
+            height: 720px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 8px;
+    
+            .main_speaker_image{
+                height: 250px;
+                margin: 50px 0;
+            }
+            &_content{
+                width: 349px;
+                height: 303px;
+                margin-left: 0;
+                text-align: center;
+    
+                & h2{
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 58px;
+                    letter-spacing: 2px;
+                    color: $white-default;
+                    margin-bottom: 25px;
+                }
+                & p{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $white-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.75;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    
+        .main_ZX7_speaker{
+            height: 320px;
+            margin: 48px 0;
+            background-image: url(/assets/home/tablet/image-speaker-zx7.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+    
+            &_content{
+                width: 210px;
+                height: 118px;
+                padding: 100px 95px;
+    
+                & h2{
+                    width: 300px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: 2px;
+                    color: $dark-default;
+                }
+                
+            }
+        }
+    
+        .main_YX1_earphones{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 320px;
+    
+            .main_speaker_image_earphones{
+                width: 350px;
+                border-radius: 8px;
+            }
+    
+            .YX1_earphones_text{
+                background-color: $gray-default;
+                height:320px;
+                width: 540px;
+                margin-left: 30px;
+                text-align: center;
+                border-radius: 8px;
+    
+                & h2{
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    margin-top: 100px;
+                    margin-right: 50px;
+                    color: $dark-default;
+                }
+                
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home_section{
+        font-family: 'Manrope';
+        text-align: center;
+        margin: 0 25px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        max-width: 1110px;
+        height: 680px;
+    
+        &_container{
+            max-width: 1110px;
+        }
+        &_items{
+            height: 680px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+            &_content{
+                position: relative;
+            }
+    
+            &_image{
+                height:200px;
+                position: absolute;
+                top: -70px;
+                right: 10px;
+                z-index: 99;
+            }
+            &_text{
+                background-color: $gray-default;
+                position: relative;
+                height: 165px;
+                width: 220px;
+                border-radius: 8px;
+    
+                .home_item_pic_title{
+                    padding-top: 100px;
+                    padding-bottom: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 1.28571px;
+                    color: $dark-default;
+                }
+                .home_item_pic_link{
+                    text-decoration: none;
+                    
+                    & span{
+                        margin-right: 5px;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 18px;
+                        letter-spacing: 1px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    .home_main_container{
+        font-family: 'Manrope';
+        max-width: 1110px;
+        margin: 0 25px;
+    
+        .main_ZX9_speaker{
+            background-color:$orange-default ;
+            height: 720px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 8px;
+    
+            .main_speaker_image{
+                height: 250px;
+                margin: 50px 0;
+            }
+            &_content{
+                width: 349px;
+                height: 303px;
+                margin-left: 0;
+                text-align: center;
+    
+                & h2{
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 58px;
+                    letter-spacing: 2px;
+                    color: $white-default;
+                    margin-bottom: 25px;
+                }
+                & p{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $white-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.75;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    
+        .main_ZX7_speaker{
+            height: 320px;
+            margin: 48px 0;
+            background-image: url(/assets/home/mobile/image-speaker-zx7.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+    
+            &_content{
+                width: 210px;
+                height: 118px;
+                padding: 100px 30px;
+    
+                & h2{
+                    width: 300px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: 2px;
+                    color: $dark-default;
+                }
+                
+            }
+        }
+    
+        .main_YX1_earphones{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 320px;
+            gap: 25px;
+    
+            .main_speaker_image_earphones{
+                width: 350px;
+                border-radius: 8px;
+            }
+    
+            .YX1_earphones_text{
+                background-color: $gray-default;
+                height:330px;
+                width: 350px;
+                margin: 0 25px;
+                text-align: center;
+                border-radius: 8px;
+    
+                & h2{
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 38px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    margin-top: 60px;
+                    margin-right: 50px;
+                    color: $dark-default;
+                }
+                
+            }
+        }
+    }
+}

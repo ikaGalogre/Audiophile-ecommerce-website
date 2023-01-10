@@ -1,0 +1,507 @@
+.product_header{
+    background-color: $dark-default;
+}
+.back{
+    padding-top: 60px;
+    & a{
+        margin: 0 165px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dark-default;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
+.products_main{
+    margin-top: 50px;
+
+    .price{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+        color: $dark-default;
+    }
+    .add_cart_button{
+        width: 160px;
+        height: 48px;
+        color: $white-default;
+        background-color: $orange-default;
+        border: none;
+        letter-spacing: 0px;
+        cursor: pointer;
+    }
+}
+.products_section{
+    margin: 0 165px;
+    .products_info{
+        font-family: 'Manrope';
+        margin-bottom: 20px;
+        .product_info_text{
+            height: 318px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+
+            .product_info_text_one{
+                width: 635px;
+                height: 318px;
+                & p{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            }
+            .product_info_text_two{
+                width: 350px;
+                height: 225px;
+            }
+            .product_text_header{
+                margin-bottom: 30px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1.14286px;
+                color: $dark-default;
+            }
+            .product_text_paragraph{
+                margin-bottom: 20px;
+            }
+            .product_text_ul{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-default;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+            .product_text_ul span{
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 30px;
+                color: $orange-default;
+                margin-right: 15px;
+            }
+        }
+        
+    }
+}
+.products_info_image{
+    display: flex;
+    justify-content: space-between;
+
+    .info_image_first{
+        width: 445px;
+        margin-top: 30px;
+        height: 280px;
+        border-radius: 8px;
+    }
+    .info_image_sec{
+        margin-top: 30px;
+        width: 540px;
+        height: 590px;
+        border-radius: 8px;
+    }
+}
+.product_adds_section{
+    font-family: 'Manrope';
+    margin: 0 165px;
+
+    .product_adds_section_header{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 1.14286px;
+        text-transform: uppercase;
+        color: $dark-default;
+    }
+    .adds_section_content_container{
+        display: flex;
+        justify-content: space-between;
+
+        .product_adds_section_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .adds_section_content_img{
+                width: 330px;
+                height: 318px;
+                margin-bottom: 30px;
+            }
+
+            .adds_section_content_header{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+                letter-spacing: 1.71429px;
+                text-transform: uppercase;
+                color: $dark-default;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .back{
+        padding-top: 60px;
+        & a{
+            margin: 0 35px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dark-default;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+    .products_main{
+        margin-top: 50px;
+        display: flex; 
+        flex-direction: row;
+        text-align: left;
+        gap: 30px;
+
+        .headphone_main_header{
+            width: 100%;
+            text-align: left;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+            color: $dark-default;
+            margin: 0 auto;
+        }
+        .price{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        .add_cart_button{
+            width: 160px;
+            height: 48px;
+            color: $white-default;
+            background-color: $orange-default;
+            border: none;
+            letter-spacing: 0px;
+            cursor: pointer;
+        }
+    }
+    .products_section{
+        margin: 0 35px;
+        .products_info{
+            font-family: 'Manrope';
+            margin-bottom: 20px;
+            .product_info_text{
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 100px;
+    
+                .product_info_text_one{
+                    width: 685px;
+                    height: 318px;
+                    & p{
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+                .product_info_text_two{
+                    display: flex;
+                    gap: 150px;
+                    width: 550px;
+                    height: 160px;
+                }
+                .product_text_header{
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    letter-spacing: 1.14286px;
+                    color: $dark-default;
+                }
+                .product_text_paragraph{
+                    margin-bottom: 20px;
+                }
+                .product_text_ul{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+                .product_text_ul span{
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: $orange-default;
+                    margin-right: 15px;
+                }
+            }
+            
+        }
+    }
+    .products_info_image{
+        display: flex;
+        justify-content: space-between;
+    
+        .info_image_first{
+            height: 190px;
+            width: 380px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .info_image_sec{
+            margin-top: 30px;
+            width: 500px;
+            height: 410px;
+            border-radius: 8px;
+        }
+    }
+    .product_adds_section{
+        font-family: 'Manrope';
+        margin: 0 35px;
+    
+        .product_adds_section_header{
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 1.14286px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        .adds_section_content_container{
+            display: flex;
+            justify-content: space-between;
+    
+            .product_adds_section_content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .adds_section_content_img{
+                    width: 260px;
+                    height: 320px;
+                    margin-bottom: 30px;
+                }
+    
+                .adds_section_content_header{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                    letter-spacing: 1.71429px;
+                    text-transform: uppercase;
+                    color: $dark-default;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .back{
+        padding-top: 60px;
+        & a{
+            margin: 0 25px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dark-default;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+    .products_main{
+        margin-top: 50px;
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+
+    .headphone_main_header{
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+            color: $dark-default;
+            margin: 0 auto;
+        }
+        .price{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        .add_cart_button{
+            width: 160px;
+            height: 48px;
+            color: $white-default;
+            background-color: $orange-default;
+            border: none;
+            letter-spacing: 0px;
+            cursor: pointer;
+        }
+    }
+    .products_section{
+        margin: 0 25px;
+        .products_info{
+            font-family: 'Manrope';
+            margin-bottom: 20px;
+            .product_info_text{
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 100px;
+    
+                .product_info_text_one{
+                    width: 330px;
+                    height: 650px;
+                    & p{
+                    height: 200px;
+
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: $dark-default;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                }
+                .product_info_text_two{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                    width: 330px;
+                    height: 160px;
+                    margin: 80px 0;
+                    margin-bottom: 100px;
+                }
+                .product_text_header{
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    letter-spacing: 1.14286px;
+                    color: $dark-default;
+                }
+                .product_text_paragraph{
+                    height: 80px;
+                    margin-bottom: 20px;
+                }
+                .product_text_ul{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-default;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+                .product_text_ul span{
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: $orange-default;
+                    margin-right: 15px;
+                }
+            }
+            
+        }
+    }
+    .products_info_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 200px;
+    
+        .info_image_first{
+            height: 190px;
+            width: 330px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .info_image_sec{
+            margin-top: 30px;
+            width: 330px;
+            height: 410px;
+            border-radius: 8px;
+        }
+    }
+    .product_adds_section{
+        font-family: 'Manrope';
+        margin: 0 25px;
+    
+        .product_adds_section_header{
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 1.14286px;
+            text-transform: uppercase;
+            color: $dark-default;
+        }
+        .adds_section_content_container{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: space-between;
+    
+            .product_adds_section_content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .adds_section_content_img{
+                    width: 100%;
+                    height: 120px;
+                    margin-bottom: 30px; 
+                }
+    
+                .adds_section_content_header{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                    letter-spacing: 1.71429px;
+                    text-transform: uppercase;
+                    color: $dark-default;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
